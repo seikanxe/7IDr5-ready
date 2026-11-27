@@ -155,8 +155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 210}
-  m_SizeDelta: {x: -80, y: 270}
+  m_AnchoredPosition: {x: -60, y: 170}
+  m_SizeDelta: {x: -480, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1521506
 MonoBehaviour:
@@ -6524,8 +6524,18 @@ MonoBehaviour:
   lines:
   - speaker: "\uAD11\uBD80"
     text: "\uD558\uC774"
+    portrait: {fileID: 0}
   - speaker: "\uB098"
     text: "\uC5B4\uB514\uB85C \uAC00\uC57C\uD558"
+    portrait: {fileID: 0}
+  choice1: 
+  choice2: 
+  onChoice1:
+    m_PersistentCalls:
+      m_Calls: []
+  onChoice2:
+    m_PersistentCalls:
+      m_Calls: []
   prompt: {fileID: 672373525}
   dialogueBox: {fileID: 1409942110}
 --- !u!58 &1371899186
@@ -6877,8 +6887,18 @@ MonoBehaviour:
   lines:
   - speaker: "\uD45C\uC9C0\uD310"
     text: "\uC548\uB155 \uB098\uB294 \uD45C\uC9C0\uD310\uC774\uC57C"
+    portrait: {fileID: 0}
   - speaker: "\uB098"
     text: "\uC5B4\uB514\uB85C \uAC00\uC57C\uD558"
+    portrait: {fileID: 0}
+  choice1: 
+  choice2: 
+  onChoice1:
+    m_PersistentCalls:
+      m_Calls: []
+  onChoice2:
+    m_PersistentCalls:
+      m_Calls: []
   prompt: {fileID: 1410515842}
   dialogueBox: {fileID: 1409942110}
 --- !u!1 &1409942105
@@ -7000,8 +7020,13 @@ MonoBehaviour:
   panel: {fileID: 1521504}
   nameText: {fileID: 889442596}
   bodyText: {fileID: 356977162}
+  choicePanel: {fileID: 0}
+  choiceText1: {fileID: 0}
+  choiceText2: {fileID: 0}
   isOpen: 0
   nearTalk: {fileID: 0}
+  nearDoor: {fileID: 0}
+  portraitImage: {fileID: 0}
 --- !u!222 &1409942111
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7149,6 +7174,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Door
   target: {fileID: 911514219}
   prompt: {fileID: 1030908657}
+  dialogueBox: {fileID: 0}
+  needKeys: 0
+  lockedTalk: {fileID: 0}
 --- !u!58 &1480453642
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7217,6 +7245,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Door
   target: {fileID: 251161592}
   prompt: {fileID: 2072096403}
+  dialogueBox: {fileID: 0}
+  needKeys: 0
+  lockedTalk: {fileID: 0}
 --- !u!58 &1556727855
 CircleCollider2D:
   m_ObjectHideFlags: 0
